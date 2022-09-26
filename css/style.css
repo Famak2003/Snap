@@ -5,6 +5,10 @@
     --almost-black: hsl(0, 0%, 8%);
 }
 
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
 *,
 *::before,
 *::after {
@@ -42,43 +46,135 @@ body {
     /* align-items: center; */
 }
 
+.nav_btn {
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+.nav_btn:hover {
+    color: black;
+    transform: translatey(-5px);
+}
+
 .logo {
     /* border: 1px solid rgb(38, 156, 34); */
     padding-top: 14px;
 }
 
-.features {
-    /* margin-top: ; */
-    cursor: pointer;
-    /* border: 1px solid gold; */
-    /* display: flex; */
-    /* flex-direction: column; */
-}
 
-.dropdown {
-    display: flex;
-    position: absolute;
-    /* border: 1px solid red; */
-    padding: 2rem 2rem;
-    border-radius: 1rem;
-    box-shadow: rgba(12, 12, 14, 0.2) 0px 7px 29px 0px;
-    right: 123rem;
-    top: 7rem;
-    /* bottom: -7rem; */
-    width: 16rem;
-    flex-direction: column;
-    gap: 1.2rem;
-    /* display: none; */
-    /* flex-direction: column; */
-}
+/*-------- MIDDLE NAVIGATION --------- */
 
 .nav_mid {
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
-    gap: 6rem;
+    gap: 4rem;
     flex-grow: 1;
     padding-left: 8rem;
+}
+
+
+/* -----FEATURES DROPDOWNS------- */
+
+
+/* .features { */
+
+
+/* margin-top: ; */
+
+
+/* cursor: pointer; */
+
+
+/* border: 1px solid gold; */
+
+
+/* display: flex; */
+
+
+/* flex-direction: column; */
+
+
+/* transition: all 400ms ease; */
+
+
+/* } */
+
+
+/* .features:hover {
+    color: black;
+    transform: translateY(-5px);
+} */
+
+.farrowDown {
+    display: inline-block;
+}
+
+.farrowUp {
+    display: none;
+}
+
+.fdropdown {
+    display: none;
+    position: absolute;
+    /* border: 1px solid red; */
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(12, 12, 14, 0.2) 0px 7px 29px 0px;
+    /* right: 20%; */
+    left: 9%;
+    top: 6rem;
+    width: 15rem;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all 400ms ease;
+}
+
+.fdropdown p {
+    display: flex;
+    gap: 1.8rem;
+    font-size: 1.5rem;
+}
+
+
+/* --------COMPANY DROPDOWN------ */
+
+
+/* .company {
+    cursor: progress;
+    transition: all 400ms ease;
+}
+
+.company:hover {
+    color: black;
+    transform: translateY(-5px);
+} */
+
+.carrowDown {
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+.carrowUp {
+    display: none;
+}
+
+.cdropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    gap: 2rem;
+    left: 24%;
+    padding: 2rem 2.5rem;
+    box-shadow: rgba(12, 12, 14, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    transition: all 400ms ease-in;
+}
+
+.cdropdown a {
+    color: var(--medium-gray);
+    font-size: 1.5rem;
 }
 
 .nav_links {
@@ -89,25 +185,43 @@ body {
     align-items: center;
 }
 
+.career {
+    color: var(--medium-gray);
+    font-weight: 8;
+    font-size: 1.5rem;
+}
+
+
+/* .about:hover {
+    color: black;
+} */
+
 .nav_link {
     /* border: 1px solid burlywood; */
+    padding: .5rem .9rem;
     font-size: 1.5rem;
     color: var(--medium-gray);
     font-weight: 8;
     display: flex;
     gap: 1rem;
+    /* cursor: pointer; */
     /* position: fixed; */
 }
 
-.nav_link :hover {
+
+/* .nav_link :hover {
     color: black;
-}
+} */
 
 .btn {
     border: 1px solid var(--almost-black);
     padding: 10px 14px;
     border-radius: 10px;
     color: var(--medium-gray);
+}
+
+.btn:hover {
+    border: 1px solid red;
 }
 
 
