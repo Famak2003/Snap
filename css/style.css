@@ -34,9 +34,6 @@ body {
     /* border: 1px solid green; */
     padding: 1.5rem 0rem;
     width: 100vw;
-    /* position: fixed; */
-    /* bottom: 60rem; */
-    /* margin-bottom: 3rem; */
     z-index: 50;
 }
 
@@ -80,12 +77,6 @@ body {
 
 /* -----FEATURES DROPDOWNS------- */
 
-
-/* .features:hover {
-    color: black;
-    transform: translateY(-5px);
-} */
-
 .farrowDown {
     display: inline-block;
 }
@@ -118,17 +109,6 @@ body {
 
 
 /* --------COMPANY DROPDOWN------ */
-
-
-/* .company {
-    cursor: progress;
-    transition: all 400ms ease;
-}
-
-.company:hover {
-    color: black;
-    transform: translateY(-5px);
-} */
 
 .carrowDown {
     display: inline-block;
@@ -165,7 +145,6 @@ body {
 
 .nav_links {
     /* border: 1px solid yellow; */
-    /* width: 10rem; */
     display: flex;
     gap: 4rem;
     align-items: center;
@@ -179,11 +158,6 @@ body {
     display: none;
 }
 
-
-/* .about:hover {
-    color: black;
-} */
-
 .nav_link {
     /* border: 1px solid burlywood; */
     padding: .5rem .9rem;
@@ -196,11 +170,6 @@ body {
     /* position: fixed; */
 }
 
-
-/* .nav_link :hover {
-    color: black;
-} */
-
 .btn {
     border: 1px solid var(--almost-black);
     padding: 10px 14px;
@@ -211,7 +180,6 @@ body {
 
 .btn:hover {
     border: 1px solid red;
-    /* transform: translateY(-5px); */
 }
 
 
@@ -248,10 +216,6 @@ body {
 
 .left_head {
     /* border: 1px solid red; */
-    /* position: relative; */
-    /* top: 6rem; */
-    /* bottom: rem; */
-    /* bottom: 5rem; */
 }
 
 .lh {
@@ -274,10 +238,7 @@ body {
 }
 
 .left_btn {
-    /* position: relative; */
-    /* top: 9rem; */
     /* border: 1px solid salmon; */
-    /* padding-bottom: 6rem; */
 }
 
 .left_btn button {
@@ -302,22 +263,6 @@ body {
     transform: translateY(1rem);
     background-color: lightblue;
 }
-
-
-/* .lfbtn.btn {
-    background-color: black;
-    font-size: 1.4rem;
-    color: var(--almost-white);
-    padding: 11px 20px;
-    transition: all 400ms ease;
-} */
-
-
-/* .lfbtn.btn:hover {
-    color: black;
-    background-color: #fff;
-    transform: translateY(-5px);
-} */
 
 .left_imgs {
     /* border: 1px solid blue; */
@@ -351,9 +296,7 @@ body {
     display: block;
     margin-left: auto;
     /* border: 1px solid blue; */
-    /* height: 80%; */
     width: 80%;
-    /* margin-bottom: 4rem; */
     object-fit: contain;
 }
 
@@ -364,14 +307,33 @@ body {
 
 /* =========== MEDIA QUERIS ============ */
 
+@media screen and (max-width:1110px) {
+    .nav_links {
+        padding-right: 3rem;
+    }
+    .right_img {
+        width: 100%;
+    }
+    .lh {
+        font-size: 7rem;
+    }
+    .left_imgs {
+        /* border: 1px solid green; */
+        padding-right: 3rem;
+    }
+    .left_img {
+        transform: scale(0.7);
+    }
+}
+
 @media screen and (max-width:900px) {
     .mobile_bar {
         display: block;
-        transform: translateX(30vw);
+        transform: translateX(30rem);
         padding-top: 10px;
         position: fixed;
         background-color: aliceblue;
-        height: 100vw;
+        height: 100%;
         width: 30vw;
         top: 0;
         right: 0;
@@ -406,6 +368,12 @@ body {
     }
     .mobile_lists a {
         gap: 1rem;
+    }
+    .mdd {
+        transition: all 500ms ease;
+    }
+    .mdd:active {
+        transform: translateY(10px);
     }
     /* ==== Features dropdpwn ==== */
     .m_features_dd {
@@ -577,11 +545,11 @@ body {
     }
 }
 
-@media screen and (max-width:445px) {
-    .m_feautures_dd img {
-        transform: scale(.8);
+@media screen and (max-width:480px) {
+    .m_features_dd img {
+        transform: scale(.7);
     }
-    .m_feautures_dd a {
+    .m_features_dd a {
         font-size: 1rem;
     }
     .m_company_dd a {
@@ -602,21 +570,21 @@ body {
     .m_btn {
         padding: 1rem 3rem;
     }
+    .m_feautures_dd img {
+        transform: scale(.5);
+    }
 }
 
-@media screen and (max-width:274px) {
-    .mobile_bar a {
-        font-size: 1rem;
-    }
+@media screen and (max-width:289px) {
     .mobile_lists {
         padding: 1rem 2rem;
     }
     .m_btn {
         padding: 1rem 2rem;
     }
-    .m_feautures_dd img {
+    /* .m_feautures_dd img {
         transform: scale(.5);
-    }
+    } */
 }
 
 @media screen and (max-width:274px) {

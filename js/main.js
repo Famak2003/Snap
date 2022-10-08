@@ -1,3 +1,5 @@
+// ========== FEATURES AND COMPANY DROPDOWN ==========
+
 const features = document.querySelector(".features");
 const feautues_dropDown = document.querySelector(".fdropdown");
 const feautures_imgup = document.querySelector(".farrowUp");
@@ -41,17 +43,18 @@ company.addEventListener("click", function() {
 
 
 
+// ========= MOBILE DROPDOWN =========
 
 
 function openNav() {
-    document.querySelector('.mobile_bar').style.transform = 'translateX(0vw)';
+    document.querySelector('.mobile_bar').style.transform = 'translateX(0)';
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     document.querySelector('.left_btn button').style.color = "rgba(0,0,0,0.4)"
 
 }
 
 function closeNav() {
-    document.querySelector('.mobile_bar').style.transform = 'translateX(50vw)';
+    document.querySelector('.mobile_bar').style.transform = 'translateX(30rem)';
     document.querySelector('.left_btn button').style.color = "white"
     document.body.style.backgroundColor = 'white'
 }
@@ -59,15 +62,22 @@ function closeNav() {
 
 
 
+
+
+// ======= FEATURES AND COMPANY MOBILE DROPDOWN =======
+
+
+let mfeatGuide = false;
 const mf = document.querySelector('.m_features');
 mf.addEventListener('click', () => {
-    featGuide = !featGuide;
+    mfeatGuide = !mfeatGuide;
+
     const m_f_drop = document.querySelector('.m_features_dd')
     const mfad = document.querySelector('.mfad')
     const mfau = document.querySelector('.mfau')
     m_f_drop.classList.toggle('m_features_dd_active');
 
-    if (featGuide === true) {
+    if (mfeatGuide === true) {
         mfad.style.display = 'none'
         mfau.style.display = 'inline-block'
     } else {
@@ -78,10 +88,22 @@ mf.addEventListener('click', () => {
 
 });
 
+
+let mcompanyGuide = false;
 const mc = document.querySelector('.m_company');
 mc.addEventListener('click', () => {
+    mcompanyGuide = !featGuide;
+
     const m_c_drop = document.querySelector('.m_company_dd')
     const mcad = document.querySelector('.mcad')
     const mcau = document.querySelector('.mcau')
     m_c_drop.classList.toggle('m_company_dd_active');
+
+    if (mcompanyGuide === true) {
+        mcad.style.display = 'none'
+        mcau.style.display = 'inline-block'
+    } else {
+        mcad.style.display = 'inline-block'
+        mcau.style.display = 'none'
+    }
 });
