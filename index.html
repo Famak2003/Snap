@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <title>Snap</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -38,7 +38,7 @@
 
                     </div>
                     <div class="fdropdown">
-                        <p> <img src="/images/icon-todo.svg" alt=""> Todo list</p>
+                        <p> <img src="/images/icon-todo.svg" alt=""> Todo List</p>
                         <p> <img src="/images/icon-calendar.svg" alt=""> Calender</p>
                         <p> <img src="/images/icon-reminders.svg" alt=""> Reminders</p>
                         <p> <img src="/images/icon-planning.svg" alt=""> Planning</p>
@@ -65,6 +65,41 @@
                             Register
                         </a>
                     </div>
+                    <div class="mobile_expand">
+                        <img onclick="openNav()" src="/images/icon-menu.svg" alt="menu">
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_bar">
+                <div class="mob_top">
+                    <img onclick="closeNav()" src="/images/icon-close-menu.svg" alt="">
+                </div>
+                <div class="mobile_lists">
+                    <div class="m_features">
+                        <a href="#">Features <span> <img class="mfad" src="/images/icon-arrow-down.svg" alt=""> <img class="mfau" src="/images/icon-arrow-up.svg" alt=""> </span></a>
+                    </div>
+                    <div class="m_features_dd">
+                        <a href="#"> <img src="/images/icon-todo.svg" alt="todo"> Todo List</a>
+                        <a href="#"> <img src="/images/icon-calendar.svg" alt="Calender"> Calendar</a>
+                        <a href="#"> <img src="/images/icon-reminders.svg" alt="reminder"> Reminders</a>
+                        <a href="#"> <img src="/images/icon-planning.svg" alt="planning"> Planning</a>
+
+                    </div>
+                    <div class="m_company">
+                        <a href="#">Company <span> <img class="mcad" src="/images/icon-arrow-down.svg" alt=""> <img class="mcau" src="/images/icon-arrow-up.svg" alt=""> </span></a>
+                    </div>
+                    <div class="m_company_dd">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+
+                    </div>
+                    <a href="#">Careers</a>
+                    <a href="#">About</a>
+                </div>
+                <div class="mobile_list_bottom">
+                    <a href="#" class="m_login">Login</a>
+                    <a href="#" class="m_btn">Register</a>
                 </div>
             </div>
         </nav>
@@ -73,13 +108,15 @@
     <main>
         <div class="main_container">
             <div class="left">
-                <div class="left_head">
-                    <h1 class="lh">Make</h1>
-                    <h1 class="lh">remote work</h1>
-                </div>
-                <p class="left_txt">Get your team in sync, no mater your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-                <div class="left_btn">
-                    <a href="#" class="lfbtn btn">Learn more</a>
+                <div class="left_top">
+                    <div class="left_head">
+                        <h1 class="lh">Make
+                            <span>remote work</span> </h1>
+                    </div>
+                    <p class="left_txt">Get your team in sync, no mater your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                    <div class="left_btn">
+                        <button>Learn more</button>
+                    </div>
                 </div>
                 <div class="left_imgs">
                     <img class="left_img li1" src="./images/client-databiz.svg" alt="">
@@ -89,6 +126,7 @@
                 </div>
             </div>
             <div class="right">
+                <img class="right_img_mobile" src="/images/image-hero-mobile.png" alt="">
                 <img class="right_img" src="/images/image-hero-desktop.png" alt="image">
             </div>
         </div>
