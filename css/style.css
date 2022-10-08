@@ -166,8 +166,6 @@ body {
     font-weight: 8;
     display: flex;
     gap: 1rem;
-    /* cursor: pointer; */
-    /* position: fixed; */
 }
 
 .btn {
@@ -175,7 +173,6 @@ body {
     padding: 10px 14px;
     border-radius: 10px;
     color: var(--medium-gray);
-    /* transition: all 400ms ease-in; */
 }
 
 .btn:hover {
